@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Outfit', sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%)
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    gap: 15px;
+    padding: 15px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+.container-imagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+}
+
+.imagem-normal {
+    width: 100%;
+    position: relative;
+}
+
+.imagem-normal > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.imagem-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 15px;    
+}
+
+.imagem-hover > img {
+    width: 100%;
+    opacity: 0;
+}
+
+.imagem-hover > img:hover:hover {
+    width: 40px;
+    opacity: 1;
+}
+
+.imagem-hover:hover {
+    background-color: hsla(178, 100%, 50%, 0.527);
+}
+
+.container-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 260px;
+    gap: 15px;
+}
+
+.titulo {
+    color: white;
+    font-size: 13px;
+}
+
+.conteudo {
+    color:hsl(215, 70%, 91%);
+    font-size: 14px;
+}
+
+.container-icones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-template-columns: 4;
+}
+
+.icon-ethereum {
+    width: auto;
+    align-items: flex-start;
+}
+
+.icon-ethereum > img {
+    height: 20%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ethereum {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: hsl(178, 100%, 50%);
+}
+
+.icon-relogio {
+    width: 25%;
+    /* height: 15px; */
+    justify-content: flex-end;
+    
+}
+
+.icon-relogio > img {
+    width: 100%;
+}
+
+.tempo {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 12px;
+    color: hsl(215, 70%, 91%);
+
+
+}
+
